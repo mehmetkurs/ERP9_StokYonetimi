@@ -7,8 +7,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Sy.Core.Abstracts
 {
-  public abstract  class BaseEntity<IKey> : IEntity<IKey>
+  public abstract  class BaseEntity<IKey> : AuditBase, IEntity<IKey>
     {
+        [Key]
         public IKey Id { get; set; }
     }
 }
