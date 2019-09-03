@@ -9,6 +9,6 @@ namespace Sy.Core.Abstracts
 {
   public abstract  class BaseEntity<IKey> : IEntity<IKey>
     {
-        public IKey Id { get; set }
+        public IKey Id { get; set; }
     }
 }
