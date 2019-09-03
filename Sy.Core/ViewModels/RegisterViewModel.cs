@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Sy.Core.Abstracts;
+using Sy.Core.Abstracts;5
 
 namespace Sy.Core.ViewModels
 {
