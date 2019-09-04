@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Sy.Core.Abstracts;5
+using Sy.Core.Abstracts;
 
 namespace Sy.Core.ViewModels
 {
-    class RegisterViewModel
+  public  class RegisterViewModel
     {
+        private string _email;
         [Required, StringLength(50)]
         public string Name { get; set; }
 
@@ -22,6 +23,11 @@ namespace Sy.Core.ViewModels
         public string Password { get; set; }
 
         [Required, StringLength(50)]
-        public string Email { get; set; }
+        public string Email
+        { 
+        get { return _email;}
+        set     { _email = value.ToLower();}
+        }
+
     }
 }

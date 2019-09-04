@@ -15,6 +15,6 @@ namespace Sy.Core.Abstracts
         [StringLength(50)]
         public string UpdatedUser { get; set; }
 
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }
